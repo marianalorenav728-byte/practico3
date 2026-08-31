@@ -1,1 +1,11 @@
-/Practico3Git/nbproject/private/
+# === NetBeans (permitir abrir proyecto, evitar conflictos) ===
+nbproject/private/
+nbproject/project.properties
+nbproject/build-impl.xml
+# === Compilados de Java ===
+*.class
+# === Carpetas de salida ===
+build/
+dist/
+out/
+target/
