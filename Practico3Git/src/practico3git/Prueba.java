@@ -12,6 +12,9 @@ public class Prueba extends javax.swing.JFrame {
     
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Prueba.class.getName());
 
+    private final String usuario = "alumno@ulp.edu.ar";
+    private final String contraseña = "12345678";
+    
     /**
      * Creates new form Prueba
      */
