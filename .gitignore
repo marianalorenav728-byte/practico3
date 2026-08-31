@@ -1,2 +1,16 @@
+<<<<<<< HEAD
 /Practico3Git/nbproject/private/
 /Practico3Git/build/
+=======
+# === NetBeans (permitir abrir proyecto, evitar conflictos) ===
+nbproject/private/
+nbproject/project.properties
+nbproject/build-impl.xml
+# === Compilados de Java ===
+*.class
+# === Carpetas de salida ===
+build/
+dist/
+out/
+target/
+>>>>>>> 11d5848c389e9ad97c951cd2ef5fa566be87e10e
