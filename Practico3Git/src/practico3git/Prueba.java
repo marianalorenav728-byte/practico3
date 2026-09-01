@@ -33,56 +33,33 @@ public class Prueba extends javax.swing.JFrame {
 
         jTextField2 = new javax.swing.JTextField();
         jDesktopPane1 = new javax.swing.JDesktopPane();
-        jPanel1 = new javax.swing.JPanel();
-        lbusuario = new javax.swing.JLabel();
-        lbcontraseña = new javax.swing.JLabel();
-        txtusario = new javax.swing.JTextField();
+        jpanelSubtitulo = new javax.swing.JPanel();
         btnverificar = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        lblcontraseña = new javax.swing.JLabel();
+        lblusuario = new javax.swing.JLabel();
+        txtusario = new javax.swing.JTextField();
+        contraseñaPass = new javax.swing.JPasswordField();
+        jPanel3 = new javax.swing.JPanel();
+        lblTitulo = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         btnocultar = new javax.swing.JButton();
         btnver = new javax.swing.JButton();
-        contraseñaPass = new javax.swing.JPasswordField();
-        jLabel1 = new javax.swing.JLabel();
 
         jTextField2.setText("jTextField2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingrese las credenciales"));
-
-        lbusuario.setText("Usuario:");
-
-        lbcontraseña.setText("Contraseña:");
-
-        txtusario.addActionListener(this::txtusarioActionPerformed);
+        jpanelSubtitulo.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingrese las credenciales"));
 
         btnverificar.setText("Verificar");
         btnverificar.addActionListener(this::btnverificarActionPerformed);
 
-        btnocultar.setText("Ocultar");
+        lblcontraseña.setText("Contraseña:");
 
-        btnver.setText("Ver");
+        lblusuario.setText("Usuario:");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(btnocultar)
-                .addGap(50, 50, 50)
-                .addComponent(btnver)
-                .addContainerGap(16, Short.MAX_VALUE))
-        );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnocultar)
-                    .addComponent(btnver))
-                .addContainerGap(23, Short.MAX_VALUE))
-        );
+        txtusario.addActionListener(this::txtusarioActionPerformed);
 
         contraseñaPass.setText("jPasswordField1");
 
@@ -91,68 +68,131 @@ public class Prueba extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lbusuario)
-                            .addComponent(lbcontraseña))
-                        .addGap(32, 32, 32)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(contraseñaPass)
-                            .addComponent(btnverificar)
-                            .addComponent(txtusario)))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(68, Short.MAX_VALUE))
+                    .addComponent(lblusuario)
+                    .addComponent(lblcontraseña))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(contraseñaPass)
+                    .addComponent(txtusario, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(19, 19, 19)
+                .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbusuario)
+                    .addComponent(lblusuario)
                     .addComponent(txtusario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbcontraseña)
+                    .addComponent(lblcontraseña)
                     .addComponent(contraseñaPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
-                .addComponent(btnverificar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22))
+                .addContainerGap())
         );
 
-        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel1.setText("Inicio de sesion");
+        javax.swing.GroupLayout jpanelSubtituloLayout = new javax.swing.GroupLayout(jpanelSubtitulo);
+        jpanelSubtitulo.setLayout(jpanelSubtituloLayout);
+        jpanelSubtituloLayout.setHorizontalGroup(
+            jpanelSubtituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpanelSubtituloLayout.createSequentialGroup()
+                .addGroup(jpanelSubtituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jpanelSubtituloLayout.createSequentialGroup()
+                        .addGap(179, 179, 179)
+                        .addComponent(btnverificar))
+                    .addGroup(jpanelSubtituloLayout.createSequentialGroup()
+                        .addGap(114, 114, 114)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(129, Short.MAX_VALUE))
+        );
+        jpanelSubtituloLayout.setVerticalGroup(
+            jpanelSubtituloLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jpanelSubtituloLayout.createSequentialGroup()
+                .addGap(26, 26, 26)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(34, 34, 34)
+                .addComponent(btnverificar)
+                .addContainerGap(23, Short.MAX_VALUE))
+        );
 
-        jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jPanel3.setBackground(new java.awt.Color(204, 204, 204));
+        jPanel3.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+
+        lblTitulo.setBackground(new java.awt.Color(153, 153, 153));
+        lblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 16)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
+        lblTitulo.setText("Inicio de sesión");
+
+        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
+        jPanel3.setLayout(jPanel3Layout);
+        jPanel3Layout.setHorizontalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(lblTitulo)
+                .addContainerGap(19, Short.MAX_VALUE))
+        );
+        jPanel3Layout.setVerticalGroup(
+            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblTitulo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        btnocultar.setText("Ocultar");
+        btnocultar.setAlignmentY(1.0F);
+
+        btnver.setText("Ver");
+        btnver.setAlignmentY(1.0F);
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(113, 113, 113)
+                .addComponent(btnocultar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnver)
+                .addGap(121, 121, 121))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnocultar)
+                    .addComponent(btnver))
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        jDesktopPane1.setLayer(jpanelSubtitulo, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jPanel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktopPane1.setLayer(jPanel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout jDesktopPane1Layout = new javax.swing.GroupLayout(jDesktopPane1);
         jDesktopPane1.setLayout(jDesktopPane1Layout);
         jDesktopPane1Layout.setHorizontalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addContainerGap(48, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35))
+            .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jDesktopPane1Layout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addGroup(jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpanelSubtitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(27, Short.MAX_VALUE))
         );
         jDesktopPane1Layout.setVerticalGroup(
             jDesktopPane1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jDesktopPane1Layout.createSequentialGroup()
-                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33))
+                .addContainerGap()
+                .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jpanelSubtitulo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -208,12 +248,14 @@ public class Prueba extends javax.swing.JFrame {
     private javax.swing.JButton btnverificar;
     private javax.swing.JPasswordField contraseñaPass;
     private javax.swing.JDesktopPane jDesktopPane1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel lbcontraseña;
-    private javax.swing.JLabel lbusuario;
+    private javax.swing.JPanel jpanelSubtitulo;
+    private javax.swing.JLabel lblTitulo;
+    private javax.swing.JLabel lblcontraseña;
+    private javax.swing.JLabel lblusuario;
     private javax.swing.JTextField txtusario;
     // End of variables declaration//GEN-END:variables
 }

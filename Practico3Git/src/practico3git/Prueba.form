@@ -45,31 +45,32 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" alignment="1" attributes="0">
-                  <EmptySpace pref="48" max="32767" attributes="0"/>
-                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
-              </Group>
+              <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" pref="128" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jPanel3" min="-2" max="-2" attributes="0"/>
+                      <Component id="jpanelSubtitulo" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="27" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
-                  <Component id="jLabel1" max="32767" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jPanel3" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jpanelSubtitulo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="jPanel1">
+        <Container class="javax.swing.JPanel" name="jpanelSubtitulo">
           <Properties>
             <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
               <Border info="org.netbeans.modules.form.compat2.border.TitledBorderInfo">
@@ -84,65 +85,31 @@
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Component id="lbusuario" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="lbcontraseña" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
-                              <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                                  <Component id="contraseñaPass" max="32767" attributes="0"/>
-                                  <Component id="btnverificar" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="txtusario" alignment="0" max="32767" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="-2" pref="179" max="-2" attributes="0"/>
+                              <Component id="btnverificar" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <EmptySpace min="-2" pref="25" max="-2" attributes="0"/>
-                              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="114" max="-2" attributes="0"/>
+                              <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace pref="68" max="32767" attributes="0"/>
+                      <EmptySpace pref="129" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="19" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbusuario" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="txtusario" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lbcontraseña" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="contraseñaPass" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace pref="43" max="32767" attributes="0"/>
+                      <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                      <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
                       <Component id="btnverificar" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                      <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                      <EmptySpace pref="23" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Component class="javax.swing.JLabel" name="lbusuario">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Usuario:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JLabel" name="lbcontrase&#xf1;a">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
-              </Properties>
-            </Component>
-            <Component class="javax.swing.JTextField" name="txtusario">
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtusarioActionPerformed"/>
-              </Events>
-            </Component>
             <Component class="javax.swing.JButton" name="btnverificar">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Verificar"/>
@@ -151,54 +118,70 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnverificarActionPerformed"/>
               </Events>
             </Component>
-            <Container class="javax.swing.JPanel" name="jPanel2">
+            <Container class="javax.swing.JPanel" name="jPanel1">
 
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                          <Component id="btnocultar" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                          <Component id="btnver" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace pref="16" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lblusuario" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblcontraseña" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="contraseñaPass" max="32767" attributes="0"/>
+                              <Component id="txtusario" alignment="0" min="-2" pref="90" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" alignment="0" attributes="0">
-                          <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
-                              <Component id="btnocultar" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="btnver" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblusuario" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="txtusario" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace pref="23" max="32767" attributes="0"/>
+                          <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="3" attributes="0">
+                              <Component id="lblcontraseña" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="contraseñaPass" alignment="3" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
                       </Group>
                   </Group>
                 </DimensionLayout>
               </Layout>
               <SubComponents>
-                <Component class="javax.swing.JButton" name="btnocultar">
+                <Component class="javax.swing.JLabel" name="lblcontrase&#xf1;a">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ocultar"/>
+                    <Property name="text" type="java.lang.String" value="Contrase&#xf1;a:"/>
                   </Properties>
                 </Component>
-                <Component class="javax.swing.JButton" name="btnver">
+                <Component class="javax.swing.JLabel" name="lblusuario">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Ver"/>
+                    <Property name="text" type="java.lang.String" value="Usuario:"/>
+                  </Properties>
+                </Component>
+                <Component class="javax.swing.JTextField" name="txtusario">
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtusarioActionPerformed"/>
+                  </Events>
+                </Component>
+                <Component class="javax.swing.JPasswordField" name="contrase&#xf1;aPass">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="jPasswordField1"/>
                   </Properties>
                 </Component>
               </SubComponents>
             </Container>
-            <Component class="javax.swing.JPasswordField" name="contrase&#xf1;aPass">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="jPasswordField1"/>
-              </Properties>
-            </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Container class="javax.swing.JPanel" name="jPanel3">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="cc" red="cc" type="rgb"/>
@@ -206,12 +189,87 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Segoe UI" size="14" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="0" green="0" red="0" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Inicio de sesion"/>
           </Properties>
-        </Component>
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="16" max="-2" attributes="0"/>
+                      <Component id="lblTitulo" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace pref="19" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="lblTitulo" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JLabel" name="lblTitulo">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="99" green="99" red="99" type="rgb"/>
+                </Property>
+                <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                  <Font name="Segoe UI" size="16" style="1"/>
+                </Property>
+                <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="0" green="0" red="0" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Inicio de sesi&#xf3;n"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
+        <Container class="javax.swing.JPanel" name="jPanel2">
+
+          <Layout>
+            <DimensionLayout dim="0">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="113" max="-2" attributes="0"/>
+                      <Component id="btnocultar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="32767" attributes="0"/>
+                      <Component id="btnver" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+            <DimensionLayout dim="1">
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="btnocultar" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="btnver" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace pref="12" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+            </DimensionLayout>
+          </Layout>
+          <SubComponents>
+            <Component class="javax.swing.JButton" name="btnocultar">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ocultar"/>
+                <Property name="alignmentY" type="float" value="1.0"/>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JButton" name="btnver">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ver"/>
+                <Property name="alignmentY" type="float" value="1.0"/>
+              </Properties>
+            </Component>
+          </SubComponents>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>
