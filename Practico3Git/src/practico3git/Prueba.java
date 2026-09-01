@@ -35,13 +35,13 @@ public class Prueba extends javax.swing.JFrame {
         jDesktopPane1 = new javax.swing.JDesktopPane();
         jPanel1 = new javax.swing.JPanel();
         lbusuario = new javax.swing.JLabel();
-        lbcontraseña = new javax.swing.JLabel();
+        lblpassword = new javax.swing.JLabel();
         txtusario = new javax.swing.JTextField();
         btnverificar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         btnocultar = new javax.swing.JButton();
         btnver = new javax.swing.JButton();
-        contraseñaPass = new javax.swing.JPasswordField();
+        txtpassword = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
         jTextField2.setText("jTextField2");
@@ -52,7 +52,7 @@ public class Prueba extends javax.swing.JFrame {
 
         lbusuario.setText("Usuario:");
 
-        lbcontraseña.setText("Contraseña:");
+        lblpassword.setText("Contraseña:");
 
         txtusario.addActionListener(this::txtusarioActionPerformed);
 
@@ -84,7 +84,7 @@ public class Prueba extends javax.swing.JFrame {
                 .addContainerGap(23, Short.MAX_VALUE))
         );
 
-        contraseñaPass.setText("jPasswordField1");
+        txtpassword.setText("jPasswordField1");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -96,10 +96,10 @@ public class Prueba extends javax.swing.JFrame {
                         .addGap(34, 34, 34)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lbusuario)
-                            .addComponent(lbcontraseña))
+                            .addComponent(lblpassword))
                         .addGap(32, 32, 32)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(contraseñaPass)
+                            .addComponent(txtpassword)
                             .addComponent(btnverificar)
                             .addComponent(txtusario)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -116,8 +116,8 @@ public class Prueba extends javax.swing.JFrame {
                     .addComponent(txtusario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lbcontraseña)
-                    .addComponent(contraseñaPass, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblpassword)
+                    .addComponent(txtpassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addComponent(btnverificar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -127,7 +127,6 @@ public class Prueba extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(204, 204, 204));
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Inicio de sesion");
 
         jDesktopPane1.setLayer(jPanel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -206,14 +205,14 @@ public class Prueba extends javax.swing.JFrame {
     private javax.swing.JButton btnocultar;
     private javax.swing.JButton btnver;
     private javax.swing.JButton btnverificar;
-    private javax.swing.JPasswordField contraseñaPass;
     private javax.swing.JDesktopPane jDesktopPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField jTextField2;
-    private javax.swing.JLabel lbcontraseña;
+    private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lbusuario;
+    private javax.swing.JPasswordField txtpassword;
     private javax.swing.JTextField txtusario;
     // End of variables declaration//GEN-END:variables
 }
