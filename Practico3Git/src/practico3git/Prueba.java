@@ -4,6 +4,8 @@
  */
 package practico3git;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Centeno-Net
@@ -12,8 +14,8 @@ public class Prueba extends javax.swing.JFrame {
 
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Prueba.class.getName());
 
-    private final String usuario = "alumno@ulp.edu.ar";
-    private final String contraseña = "12345678";
+    String usuario = "alumno@ulp.edu.ar";
+    String password = "12345678";
 
     /**
      * Creates new form Prueba
@@ -36,7 +38,7 @@ public class Prueba extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         btnverificar = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        txtusario = new javax.swing.JTextField();
+        txtusuario = new javax.swing.JTextField();
         lbusuario = new javax.swing.JLabel();
         lblpassword = new javax.swing.JLabel();
         txtpassword = new javax.swing.JPasswordField();
@@ -55,13 +57,12 @@ public class Prueba extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingrese las credenciales"));
 
         btnverificar.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        btnverificar.setForeground(new java.awt.Color(0, 0, 0));
         btnverificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico3git/icons8-cliente-windows-48.png"))); // NOI18N
         btnverificar.setText("Verificar");
         btnverificar.setBorder(null);
         btnverificar.addActionListener(this::btnverificarActionPerformed);
 
-        txtusario.addActionListener(this::txtusarioActionPerformed);
+        txtusuario.addActionListener(this::txtusuarioActionPerformed);
 
         lbusuario.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         lbusuario.setText("Usuario:");
@@ -82,7 +83,7 @@ public class Prueba extends javax.swing.JFrame {
                     .addComponent(lblpassword))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtusario)
+                    .addComponent(txtusuario)
                     .addComponent(txtpassword, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE))
                 .addContainerGap())
         );
@@ -92,7 +93,7 @@ public class Prueba extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbusuario)
-                    .addComponent(txtusario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtusuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblpassword)
@@ -125,13 +126,11 @@ public class Prueba extends javax.swing.JFrame {
         );
 
         btnocultar.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnocultar.setForeground(new java.awt.Color(0, 0, 0));
         btnocultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico3git/icons7-ocultar-contraseña-50.png"))); // NOI18N
         btnocultar.setText("Ocultar");
         btnocultar.addActionListener(this::btnocultarActionPerformed);
 
         btnver.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        btnver.setForeground(new java.awt.Color(0, 0, 0));
         btnver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/practico3git/icons7-mostrar-contraseña-50.png"))); // NOI18N
         btnver.setText("Ver");
         btnver.addActionListener(this::btnverActionPerformed);
@@ -161,7 +160,6 @@ public class Prueba extends javax.swing.JFrame {
 
         jLabel1.setBackground(new java.awt.Color(204, 204, 204));
         jLabel1.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Inicio de sesión");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -222,12 +220,19 @@ public class Prueba extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtusarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusarioActionPerformed
+    private void txtusuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtusuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtusarioActionPerformed
+    }//GEN-LAST:event_txtusuarioActionPerformed
 
     private void btnverificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnverificarActionPerformed
-        // TODO add your handling code here:
+        String usuarioIngresado = txtusuario.getText();
+        String passwordIngresado = new String (txtpassword.getPassword());
+        
+        if (usuarioIngresado.equals(usuario) && passwordIngresado.equals(password)) {
+            JOptionPane.showMessageDialog(this, "Bienvenido");
+        }else{
+            JOptionPane.showMessageDialog(this, "Usuario y/o contraseña incorrectos");
+        }
     }//GEN-LAST:event_btnverificarActionPerformed
 
     private void btnverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnverActionPerformed
@@ -277,6 +282,6 @@ public class Prueba extends javax.swing.JFrame {
     private javax.swing.JLabel lblpassword;
     private javax.swing.JLabel lbusuario;
     private javax.swing.JPasswordField txtpassword;
-    private javax.swing.JTextField txtusario;
+    private javax.swing.JTextField txtusuario;
     // End of variables declaration//GEN-END:variables
 }
